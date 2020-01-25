@@ -4,13 +4,20 @@
   "description": "Simple Serverside Javasccript Template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node src/index.js",
+    "dev:src:": "nodemon --exec babel-node",
+    "build": "babel src -d dist",
+    "serve": "node dist/index.js"
   },
   "author": "Putu Harum Bawa",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.8.3",
     "@babel/core": "^7.8.3",
-    "@babel/preset-env": "^7.8.3"
-  }
+    "@babel/node": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {}
 }
