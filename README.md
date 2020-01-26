@@ -3,7 +3,7 @@
 This template includes:
 - [x]  Babel
 - [x]  Jest
-
+- [x]  ESLint
 
 ## Links
 - [https://babeljs.io/en/setup#installation](https://babeljs.io/en/setup#installation)
@@ -11,3 +11,4 @@ This template includes:
 - [https://www.npmjs.com/package/nodemon](https://www.npmjs.com/package/nodemon)
 - [https://jestjs.io/docs/en/getting-started](https://jestjs.io/docs/en/getting-started)
 - [https://eslint.org/docs/user-guide/getting-started](https://eslint.org/docs/user-guide/getting-started)
+- [https://github.com/typicode/husky#readme](https://github.com/typicode/husky#readme)

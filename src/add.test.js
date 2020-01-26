@@ -1,7 +1,7 @@
-import add from './add.js';
+import add from './add';
 
 describe('Add', () => {
   test('should add two numbers correctly', () => {
-    expect(add(1,2)).toBe(3);
+    expect(add(1, 2)).toBe(3);
   });
 });
