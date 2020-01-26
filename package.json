@@ -10,20 +10,6 @@
     "build": "babel src -d dist",
     "serve": "node dist/index.js"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm test"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --cache --fix",
-      "prettier --write",
-      "git add"
-    ],
-    "*.md": "prettier --write"
-  },
   "author": "Putu Harum Bawa",
   "license": "ISC",
   "devDependencies": {
@@ -38,8 +24,18 @@
     "eslint-plugin-import": "^2.20.0",
     "husky": "^4.2.1",
     "jest": "^25.1.0",
+    "lint-staged": "^10.0.2",
     "nodemon": "^2.0.2",
     "prettier": "1.19.1"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
 }
